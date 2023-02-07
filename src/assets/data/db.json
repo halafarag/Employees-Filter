@@ -1,0 +1,90 @@
+[
+  {
+    "id": 1,
+    "name": "Ali fawzy fouda  ",
+    "department": "Software",
+    "employmentDate": "05/01/2022",
+    "salary": 10000,
+    "experience": "less than a year"
+  },
+  {
+    "id": 2,
+    "name": "Ahmed hassan ",
+    "department": "Hardware",
+    "employmentDate": "10/01/2023",
+    "salary": 12000,
+    "experience": "less than a year"
+  },
+  {
+    "id": 3,
+    "name": "Mohamed Hamza",
+    "department": "Software",
+    "employmentDate": "03/01/2021",
+    "salary": 13000,
+    "experience": "2 years"
+  },
+  {
+    "id": 4,
+    "name": "Heba Fahmy",
+    "department": "HR",
+    "employmentDate": "02/11/2020",
+    "salary": 9000,
+    "experience": "3 years"
+  },
+  {
+    "id": 5,
+    "name": "Hamza hani",
+    "department": "Accounting",
+    "employmentDate": "01/12/2019",
+    "salary": 5000,
+    "experience": "5 years"
+  },
+  {
+    "id": 6,
+    "name": "Ali Ibraheem",
+    "department": "Sales",
+    "employmentDate": "01/05/2018",
+    "salary": 13000,
+    "experience": "7 years"
+  },
+  {
+    "id": 7,
+    "name": "Asmaa Alsayed",
+    "department": "HR",
+    "employmentDate": "12/09/2017",
+    "salary": 12000,
+    "experience": "4 years"
+  },
+  {
+    "id": 8,
+    "name": "Safya adel",
+    "department": "Research",
+    "employmentDate": "11/11/2016",
+    "salary": 7000,
+    "experience": "6 years"
+  },
+  {
+    "id": 9,
+    "name": "Aml Ayad",
+    "department": "Accounting",
+    "employmentDate": "02/10/2005",
+    "salary": 8000,
+    "experience": "4 years"
+  },
+  {
+    "id": 10,
+    "name": "Anas Zain",
+    "department": "Embeded",
+    "employmentDate": "01/01/2022",
+    "salary": 10000,
+    "experience": "less than a year"
+  },
+  {
+    "id": 11,
+    "name": "Mohamed mamdoh",
+    "department": "Embeded",
+    "employmentDate": "01/11/2022",
+    "salary": 10000,
+    "experience": "2 years "
+  }
+]

@@ -1,0 +1,96 @@
+<div style="width: min-content; width: 100vh">
+  <a
+    type="button"
+    data-bs-toggle="offcanvas"
+    data-bs-target="#offcanvasExample"
+    aria-controls="offcanvasExample"
+    class="bg-dark shadow text-white"
+  >
+    <i class="bi bi-list fs-2 p-1"></i>
+  </a>
+  <div
+    class="offcanvas offcanvas-start bg-light"
+    tabindex="-1"
+    id="offcanvasExample"
+    aria-labelledby="offcanvasExampleLabel"
+    aria-labelledby="offcanvasExampleLabel"
+  >
+    <div class="offcanvas-header">
+      <h2 class="offcanvas-title" id="offcanvasExampleLabel">Filters</h2>
+      <button
+        type="button"
+        class="btn bi bi-x-lg text-danger fw-bold fs-3"
+        data-bs-dismiss="offcanvas"
+        aria-label="Close"
+      ></button>
+    </div>
+    <div class="offcanvas-body">
+      <form [formGroup]="filterForm" (ngSubmit)="onSubmit()">
+        <div class="mb-3">
+          <input
+            type="text"
+            class="form-control p-2"
+            placeholder="Name"
+            formControlName="name"
+          />
+        </div>
+        <div class="mb-3">
+          <input
+            type="date"
+            class="form-control p-2"
+            placeholder="Joining Date"
+            data-provide="datepicker"
+            formControlName="employmentDate"
+          />
+        </div>
+        <div class="mb-3">
+          <ng-multiselect-dropdown
+            [placeholder]="'experience'"
+            [settings]="dropdownSettings"
+            [data]="dropdownList"
+            (onSelect)="onItemSelect($event)"
+            (onSelectAll)="onSelectAll($event)"
+            formControlName="experience"
+          >
+          </ng-multiselect-dropdown>
+        </div>
+        <div class="mb-3">
+          <input
+            type="number"
+            class="form-control p-2"
+            placeholder="Salary"
+            formControlName="salary"
+          />
+        </div>
+        <div class="mb-3">
+          <select class="form-select" formControlName="department">
+            <option value="" disabled selected>Department</option>
+            <option *ngFor="let topping of toppingList" value="{{ topping }}">
+              {{ topping }}
+            </option>
+            <option value="" class="text-danger">No one</option>
+          </select>
+        </div>
+
+        <div class="row d-flex justify-content-between mt-5">
+          <button
+            type="submit"
+            class="col-3 btn btn-danger"
+            (click)="restFilter()"
+          >
+            Clear All
+          </button>
+
+          <button
+            type="submit"
+            class="col-3 btn btn-dark"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          >
+            Filter
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

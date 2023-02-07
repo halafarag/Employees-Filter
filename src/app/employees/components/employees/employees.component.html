@@ -1,0 +1,38 @@
+<div class="container-fluid p-0 m-0">
+  <div class="row d-flex justify-content-between p-0 m-0">
+    <div class="col-1 p-0"><app-filter></app-filter></div>
+    <div class="col-10 mx-auto mt-5">
+      <table class="table table-hover shadow responsive-table">
+        <thead class="table-dark">
+          <tr class="text-center">
+            <th scope="col">Id</th>
+            <th scope="col">Name</th>
+            <th scope="col">Salary</th>
+            <th scope="col">Experience</th>
+            <th scope="col">Department</th>
+            <th scope="col">EmploymentDate</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let emp of employessFilter" class="text-center">
+            <th scope="row">{{ emp.id }}</th>
+            <td>{{ emp.name }}</td>
+            <td>{{ emp.salary | currency : "EGP " }}</td>
+            <td>{{ emp.experience }}</td>
+            <td>{{ emp.department }}</td>
+            <td>{{ emp.employmentDate }}</td>
+          </tr>
+          <tr>
+            <td
+              colspan="6"
+              class="text-center text-danger"
+              *ngIf="employessFilter.length == 0"
+            >
+              NO DATA MATCH
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
